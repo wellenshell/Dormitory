@@ -25,7 +25,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UIViewController alloc]init];
-    
+    NSLog(@"---------------");
     //蒲公英上的应用更新提示
     [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:@"67e2518f1eb502188eafd9543542259a"];
     [[PgyUpdateManager sharedPgyManager] checkUpdate];
